@@ -1,0 +1,12 @@
+python -m venv ./venv_dbt
+source ./venv_dbt/Scripts/activate
+pip install dbt-spark
+dbt --version
+pip install "dbt-spark[PyHive]"
+
+
+-- new project
+dbt init
+
+
+$SPARK_HOME/bin/spark-class org.apache.spark.deploy.SparkSubmit --class org.apache.spark.sql.hive.thriftserver.HiveThriftServer2 spark-internal
