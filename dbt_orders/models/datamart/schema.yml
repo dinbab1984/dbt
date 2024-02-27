@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+  - name: agg_flight_count
+    description: "ORIGIN_COUNTRY_NAME flights count"
+    columns:
+      - name: ORIGIN_COUNTRY_NAME
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null

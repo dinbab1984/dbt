@@ -8,4 +8,5 @@ SELECT
     ORIGIN_COUNTRY_NAME
     , DEST_COUNTRY_NAME
     , COUNT
-FROM JSON.`file:///data/flight-data/json`
+/*FROM JSON.`file:///data/flight-data/json` */
+FROM {{ source('raw', 'flight_data') }}

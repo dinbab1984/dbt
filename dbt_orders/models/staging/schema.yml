@@ -1,0 +1,11 @@
+
+version: 2
+
+models:
+  - name: stg_flight_data
+    description: "Flight data table"
+    columns:
+      - name: ORIGIN_COUNTRY_NAME
+        description: "ORIGIN_COUNTRY_NAME"
+        tests:
+          - not_null

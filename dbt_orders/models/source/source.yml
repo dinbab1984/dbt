@@ -1,0 +1,11 @@
+
+version: 2
+
+sources:
+  - name: raw
+    schema: json
+    tables:
+      - name: flight_data
+        identifier: "`file:///data/flight-data/json`"
+        qouting:
+          identifier: true
