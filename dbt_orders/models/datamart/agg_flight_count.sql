@@ -1,6 +1,6 @@
 {{ config(
     materialized='incremental',
-    incremental_strategy='append',
+    incremental_strategy='insert_overwrite',
     file_format='json',
     location_root='file:///data/data-mart',
 ) }}

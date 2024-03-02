@@ -1,6 +1,6 @@
 {{ config(
     materialized='incremental',
-    incremental_strategy='append',
+    incremental_strategy='insert_overwrite',
     file_format='parquet',
     location_root='file:///data/staging',
 ) }}
