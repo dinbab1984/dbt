@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: refactoring_seed
+    tables:
+      - name: stripe_payments

@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: refactoring_seed
+    tables:
+      - name: jaffle_shop_customers
+      - name: jaffle_shop_orders
+

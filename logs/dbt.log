@@ -164,3 +164,45 @@ Runtime Error
 [0m21:34:03.345989 [debug] [MainThread]: Command `dbt compile` failed at 21:34:03.345989 after 0.17 seconds
 [0m21:34:03.347603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C01A42F520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C01CCE9CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C01CCE9E10>]}
 [0m21:34:03.347603 [debug] [MainThread]: Flushing usage events
+[0m17:43:11.855973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226960533D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022698BA8310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022698BABA00>]}
+
+
+============================== 17:43:12.602098 | 383cf393-30c4-4d1e-ad72-efd1cae9eb14 ==============================
+[0m17:43:12.602098 [info ] [MainThread]: Running with dbt=1.7.9
+[0m17:43:12.618018 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'D:\\Learning\\github\\dinbab1984\\dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init dbt_refactoring', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:43:12.979357 [debug] [MainThread]: Starter project path: D:\Python\Python310\lib\site-packages\dbt\include\starter_project
+[0m17:43:13.562381 [info ] [MainThread]: 
+Your new dbt project "dbt_refactoring" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:43:13.583150 [info ] [MainThread]: Setting up your profile.
+[0m17:45:01.044663 [info ] [MainThread]: Profile dbt_refactoring written to D:\Learning\github\dinbab1984\dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m17:45:01.059276 [debug] [MainThread]: Command `dbt init` succeeded at 17:45:01.059276 after 109.93 seconds
+[0m17:45:01.064232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226960533D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022698BABB80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022698BAB370>]}
+[0m17:45:01.073761 [debug] [MainThread]: Flushing usage events
+[0m21:39:57.659207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021745E833D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217489D7580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217489D53C0>]}
+
+
+============================== 21:39:57.674825 | b37bf6e0-d551-4343-ad30-dfdc0f15b92c ==============================
+[0m21:39:57.674825 [info ] [MainThread]: Running with dbt=1.7.9
+[0m21:39:57.674825 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Learning\\github\\dinbab1984\\dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt docs generate', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:39:57.674825 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\Learning\github\dinbab1984\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:39:57.690449 [debug] [MainThread]: Command `dbt docs generate` failed at 21:39:57.690449 after 0.29 seconds
+[0m21:39:57.690449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021745E833D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217489D5E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217489D41C0>]}
+[0m21:39:57.690449 [debug] [MainThread]: Flushing usage events

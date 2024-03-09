@@ -6,7 +6,7 @@
 ) }}
 
 {% set get_countries_query %}
-  select distinct ORIGIN_COUNTRY_NAME FROM {{ source('raw', 'flight_data') }}
+  select distinct ORIGIN_COUNTRY_NAME FROM {{ ref('stg_flight_data') }}
 {% endset %}
 {% set results = run_query(get_countries_query) %}
 {% if execute %}
@@ -21,12 +21,13 @@ with orig_country as
 SELECT 
     ORIGIN_COUNTRY_NAME
     , SUM(COUNT) as COUNT
-FROM {{ source('raw', 'flight_data') }}
+FROM {{ ref('stg_flight_data') }}
+GROUP BY ORIGIN_COUNTRY_NAME
 
 )
 SELECT 
-    {% for country in countries %}
+    /*{% for country in countries %}
     sum(case when ORIGIN_COUNTRY_NAME = '{{country}}' then COUNT end) as "{{country}}_COUNT",
-    {% endfor %}
+    {% endfor %} */
     sum(COUNT) as total_count
 FROM orig_country

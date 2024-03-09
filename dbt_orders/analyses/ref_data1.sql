@@ -1,0 +1,1 @@
+select * from orders_reference.ref_data1

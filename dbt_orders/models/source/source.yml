@@ -9,3 +9,7 @@ sources:
         identifier: "`file:///data/flight-data/json`"
         qouting:
           identifier: true
+  - name: reference
+    schema: orders_reference
+    tables:
+     - name: ref_data1
